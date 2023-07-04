@@ -1,4 +1,5 @@
 import Banner from "../components/Banner/Banner";
+import Contact from "../components/Contact/Contact";
 import Details from "../components/Deatils/Details";
 import Education from "../components/Education/Education";
 import Projects from "../components/Projects/Projects";
@@ -12,6 +13,7 @@ const Portfolio = () => {
             <Skills></Skills>
             <Projects></Projects>
             <Education></Education>
+            <Contact></Contact>
         </div>
     );
 };

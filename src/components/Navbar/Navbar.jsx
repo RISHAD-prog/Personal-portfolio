@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import { GrAppsRounded } from "react-icons/gr";
 import { FaTools, FaUserAlt, FaUserGraduate } from "react-icons/fa";
 import { AiFillMail } from "react-icons/ai";
-
+import { BsFileEarmarkPdfFill } from "react-icons/bs";
+import { GiSkills } from "react-icons/gi";
 const Navbar = () => {
     return (
         <div className="">
@@ -15,13 +15,13 @@ const Navbar = () => {
                         </label>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             <li><Link to="/about" ><FaUserAlt></FaUserAlt>About</Link></li>
-                            <li><Link to="/projects"> <GrAppsRounded className=" "></GrAppsRounded> Projects</Link></li>
+                            <li><Link to="/projects"> <GiSkills className=" "></GiSkills> Projects</Link></li>
                             <li>
                                 <Link><FaTools></FaTools>Skills</Link>
                             </li>
                             <li><Link><FaUserGraduate></FaUserGraduate>Education</Link></li>
                             <li><Link><AiFillMail></AiFillMail>Contact</Link></li>
-                            <li><Link><AiFillMail></AiFillMail>Resume</Link></li>
+                            <li><Link><BsFileEarmarkPdfFill></BsFileEarmarkPdfFill>Resume</Link></li>
                         </ul>
                     </div>
                     <div className=" flex flex-col text-warning ms-36" >
@@ -32,13 +32,13 @@ const Navbar = () => {
                 <div className="navbar-end hidden w-full me-11 lg:flex">
                     <ul className="menu menu-horizontal px-1  text-white text-xl">
                         <li><a href="#about" className="hover:text-warning" ><FaUserAlt></FaUserAlt>About</a></li>
-                        <li  ><a href="#projects" className="hover:text-warning" > <GrAppsRounded className=" "></GrAppsRounded> Projects</a></li>
+                        <li  ><a href="#project" className="hover:text-warning" > <GiSkills className=" "></GiSkills> Projects</a></li>
                         <li>
                             <a href="#skill" className="hover:text-warning"><FaTools></FaTools>Skills</a>
                         </li>
-                        <li><Link className="hover:text-warning"><FaUserGraduate></FaUserGraduate>Education</Link></li>
+                        <li><a href="#education" className="hover:text-warning"><FaUserGraduate></FaUserGraduate>Education</a></li>
                         <li><a href="#contact" className="hover:text-warning"><AiFillMail></AiFillMail>Contact</a></li>
-                        <li><Link className="hover:text-warning"><AiFillMail></AiFillMail>Resume</Link></li>
+                        <li><a href="https://drive.google.com/file/d/1pd2kYbDzBPB2sVjVl0cn6S_Piog626HP/view?usp=sharing" className="hover:text-warning"><BsFileEarmarkPdfFill></BsFileEarmarkPdfFill>Resume</a></li>
                     </ul>
                 </div>
 

@@ -6,7 +6,7 @@ import Tilt from 'react-parallax-tilt';
 
 const Projects = () => {
     return (
-        <div id='projects' >
+        <div id='project' >
             <h1 className='text-center text-3xl font-bold' >My Projects</h1>
             <div className='flex items-center mx-16 my-24 gap-5' >
                 <Tilt>
