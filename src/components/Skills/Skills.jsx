@@ -46,7 +46,7 @@ const Skills = () => {
                 <div className="">
                     <FaNodeJs className="w-36 h-36 ms-28 text-warning bg-white rounded-full p-5"></FaNodeJs>
                     <h1 className="text-2xl font-bold my-4">Node.Js</h1>
-                    <p>I have Experience with the Node.js and many of its modules, including Express,  Request, DotEnv,JWT, Oauth2-server and have created many of my own, including Summer Camp </p>
+                    <p>I have Experience with the Node.js and many of its modules, including Express,  Request, DotEnv,JWT, Oauth2-server, NPM (Node package Manager) and have created many of my own, including Summer Camp </p>
                 </div>
                 <div className="">
                     <FaReact className="w-36 h-36 ms-28 text-warning bg-white rounded-full p-5"></FaReact>
