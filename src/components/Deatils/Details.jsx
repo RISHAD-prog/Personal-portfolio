@@ -1,0 +1,55 @@
+import { Link } from "react-router-dom";
+import { BsFacebook, BsFilePdfFill, BsGithub, BsLinkedin } from "react-icons/bs";
+const Details = () => {
+    return (
+        <div id="about" >
+            <div className="flex align-middle items-center justify-center gap-28 mt-8">
+                <Link to="https://www.aiub.edu/" className="flex items-center text-2xl gap-8 font-serif font-bold text-blue-700"><img
+                    className="w-36" src="https://www.aiub.edu/Files/Templates/NewAIUB/assets/images/aiub-logo.svg" alt="American International University-Bangladesh" />American <br /> International <br /> University- <br />Bangladesh</Link>
+                <Link to="https://www.programming-hero.com/" className="  flex items-center text-2xl  font-serif font-bold text-blue-700 ">
+                    <img src="https://web.programming-hero.com/static/media/ph_logo.cda7f338.svg" className=" w-36" alt="Programming Hero" />Programming Hero <br /> Lets Code_ <br /> Your Career</Link>
+                <Link to="https://www.aiub.edu/faculties/fst" className="  flex items-center text-2xl  font-serif font-bold gap-3 text-blue-700 "><img className="w-36" src="https://www.aiub.edu/Files/Uploads/fst-short-logo.png" alt="" />AIUB <br /> Faculty of <br />Science and <br />Technology</Link>
+            </div>
+            <div className="" style={{ backgroundColor: "#edeeef" }}>
+                <div className="ms-40 mt-20  px-40 py-20 lg:flex items-center gap-10 ">
+                    <div className="m-0" >
+                        <div className="avatar">
+                            <div className=" w-66  h-72 rounded-full ring ring-slate-50 ring-offset-base-100 ring-offset-4">
+                                <img src="https://i.ibb.co/d2cxthk/Rishad-Photo.jpg" />
+                            </div>
+                        </div>
+
+                        <div className=" flex items-center gap-3 ms-20 mt-3">
+                            <a><BsFacebook style={{ width: "30px", height: "30px" }} ></BsFacebook></a>
+                            <a><BsLinkedin style={{ width: "30px", height: "30px" }}></BsLinkedin></a>
+                            <a><BsGithub style={{ width: "30px", height: "30px" }}></BsGithub></a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h1 className="font-bold text-2xl" > Ismail Hossain Rishad</h1> <br />
+                        <p className="font-bold" >AIUB 20th batch, BSC in CSE. Student, Software Engineer, and AI/ML Researcher
+                        </p> <br />
+
+                        <p>I am a under-graduate student of AIUB Class of 2020 and my passion is Computer Science.
+                            My interests include software design and development, artificial intelligence, machine learning, computer vision.</p>
+
+                        <p>I am currently a Under-graduate student working towards my final year Thesis on Deep Learning and seeking for an Internship to develop my software development Skills.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div className="" style={{ backgroundColor: "#edeeef" }}>
+                <div className="pb-24 text-center">
+                    <h1 className="text-5xl font-bold mb-3">Learn More About My:</h1>
+                    <button className="btn btn-neutral me-3 w-28 h-16"><a href="#skill" >Skills</a> </button>
+                    <button className="btn btn-neutral me-3 w-28 h-16"><a href="#project" >Projects</a></button>
+                    <button className="btn btn-neutral me-3 w-28 h-16" ><a className="flex items-center gap-2" href="https://drive.google.com/file/d/1pd2kYbDzBPB2sVjVl0cn6S_Piog626HP/view?usp=sharing"><BsFilePdfFill></BsFilePdfFill> Resume</a></button>
+                </div>
+            </div>
+
+        </div>
+    );
+};
+
+export default Details;
