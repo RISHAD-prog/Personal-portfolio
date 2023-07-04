@@ -9,13 +9,13 @@ const Navbar = () => {
             <div className="navbar fixed top-0 z-10 bg-opacity-60 text-white bg-gray-800 ">
 
                 <div className="navbar-start">
-                    <div className="dropdown">
+                    <div className="dropdown text-black">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             <li><Link to="/about" ><FaUserAlt></FaUserAlt>About</Link></li>
-                            <li><Link to="/projects"> <GrAppsRounded className=" bg-white"></GrAppsRounded> Projects</Link></li>
+                            <li><Link to="/projects"> <GrAppsRounded className=" "></GrAppsRounded> Projects</Link></li>
                             <li>
                                 <Link><FaTools></FaTools>Skills</Link>
                             </li>
@@ -32,12 +32,12 @@ const Navbar = () => {
                 <div className="navbar-end hidden w-full me-11 lg:flex">
                     <ul className="menu menu-horizontal px-1  text-white text-xl">
                         <li><a href="#about" className="hover:text-warning" ><FaUserAlt></FaUserAlt>About</a></li>
-                        <li  ><Link to="/projects" className="hover:text-warning" > <GrAppsRounded className=" bg-white"></GrAppsRounded> Projects</Link></li>
+                        <li  ><a href="#projects" className="hover:text-warning" > <GrAppsRounded className=" "></GrAppsRounded> Projects</a></li>
                         <li>
-                            <Link className="hover:text-warning"><FaTools></FaTools>Skills</Link>
+                            <a href="#skill" className="hover:text-warning"><FaTools></FaTools>Skills</a>
                         </li>
                         <li><Link className="hover:text-warning"><FaUserGraduate></FaUserGraduate>Education</Link></li>
-                        <li><Link className="hover:text-warning"><AiFillMail></AiFillMail>Contact</Link></li>
+                        <li><a href="#contact" className="hover:text-warning"><AiFillMail></AiFillMail>Contact</a></li>
                         <li><Link className="hover:text-warning"><AiFillMail></AiFillMail>Resume</Link></li>
                     </ul>
                 </div>
