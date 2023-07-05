@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
-import { BsFacebook, BsFilePdfFill, BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
+import { FaTools, FaUserGraduate } from "react-icons/fa";
+import { AiFillMail } from "react-icons/ai";
+import { GiSkills } from "react-icons/gi";
 const Details = () => {
     return (
         <div id="about" >
@@ -42,9 +45,10 @@ const Details = () => {
             <div className="" style={{ backgroundColor: "#edeeef" }}>
                 <div className="pb-24 text-center">
                     <h1 className="text-5xl font-bold mb-3">Learn More About My:</h1>
-                    <button className="btn btn-neutral me-3 w-28 h-16"><a href="#skill" >Skills</a> </button>
-                    <button className="btn btn-neutral me-3 w-28 h-16"><a href="#project" >Projects</a></button>
-                    <button className="btn btn-neutral me-3 w-28 h-16" ><a className="flex items-center gap-2" href="https://drive.google.com/file/d/1pd2kYbDzBPB2sVjVl0cn6S_Piog626HP/view?usp=sharing"><BsFilePdfFill></BsFilePdfFill> Resume</a></button>
+                    <button className="btn btn-neutral me-3  h-16 "><a href="#skill" className="flex items-center" ><FaTools className="me-3 h-4 w-4"></FaTools>Skills</a> </button>
+                    <button className="btn btn-neutral me-3  h-16"><a href="#project" className="flex items-center"  ><GiSkills className="me-3 h-4 w-4"></GiSkills>Projects</a></button>
+                    <button className="btn btn-neutral me-3  h-16 "><a href="#contact" className="flex items-center"  ><AiFillMail className="me-3 h-4 w-4"></AiFillMail>Contact</a></button>
+                    <button className="btn btn-neutral me-3  h-16"><a href="#education" className="flex items-center"  ><FaUserGraduate className="me-3 h-4 w-4"></FaUserGraduate>Education</a></button>
                 </div>
             </div>
 
