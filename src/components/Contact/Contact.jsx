@@ -1,5 +1,6 @@
 import { useState } from "react";
 import emailjs from 'emailjs-com';
+import Swal from "sweetalert2";
 const Contact = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -13,13 +14,23 @@ const Contact = () => {
         emailjs.sendForm('service_kdrenc8', 'template_jfv3mqc', e.target, 'b7I_Sq_Cz5GuAwkPS')
             .then((response) => {
                 console.log('Email sent successfully:', response.text);
+                Swal.fire(
+                    'Good job!',
+                    'Email sent successfully:',
+                    response.text
+                )
                 // Reset the form
                 setName('');
                 setEmail('');
                 setMessage('');
             })
             .catch((error) => {
-                console.error('Error sending email:', error);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Error sending email',
+                    footer: error
+                })
             });
     };
     return (
