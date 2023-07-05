@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@react-spring/web": "^9.7.3",
+    "axios": "^1.4.0",
+    "emailjs-com": "^3.2.0",
     "firebase": "^9.23.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
