@@ -3,7 +3,15 @@ import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaTools, FaUserGraduate } from "react-icons/fa";
 import { AiFillMail } from "react-icons/ai";
 import { GiSkills } from "react-icons/gi";
+import { BsFileEarmarkPdfFill } from "react-icons/bs";
 const Details = () => {
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = 'https://drive.google.com/uc?export=download&id=1pd2kYbDzBPB2sVjVl0cn6S_Piog626HP';
+        link.download = 'resume.pdf';
+
+        link.click();
+    }
     return (
         <div id="about" >
             <div className="flex align-middle items-center justify-center gap-28 mt-8">
@@ -47,8 +55,9 @@ const Details = () => {
                     <h1 className="text-5xl font-bold mb-3">Learn More About My:</h1>
                     <button className="btn btn-neutral me-3  h-16 "><a href="#skill" className="flex items-center" ><FaTools className="me-3 h-4 w-4"></FaTools>Skills</a> </button>
                     <button className="btn btn-neutral me-3  h-16"><a href="#project" className="flex items-center"  ><GiSkills className="me-3 h-4 w-4"></GiSkills>Projects</a></button>
-                    <button className="btn btn-neutral me-3  h-16 "><a href="#contact" className="flex items-center"  ><AiFillMail className="me-3 h-4 w-4"></AiFillMail>Contact</a></button>
-                    <button className="btn btn-neutral me-3  h-16"><a href="#education" className="flex items-center"  ><FaUserGraduate className="me-3 h-4 w-4"></FaUserGraduate>Education</a></button>
+                    <button className="btn btn-neutral me-3  h-16 "><a href="#contact" className="flex items-center"  ><AiFillMail className="me-3 h-4 w-4"></AiFillMail>Contact</a></button> <br />
+                    <button className="btn btn-neutral me-3 mt-4 h-16"><a href="#education" className="flex items-center"  ><FaUserGraduate className="me-3 h-4 w-4"></FaUserGraduate>Education</a></button>
+                    <button onClick={handleDownload} className="btn btn-neutral me-3  h-16"  ><BsFileEarmarkPdfFill className=" h-4 w-4"></BsFileEarmarkPdfFill>Resume</button>
                 </div>
             </div>
 
